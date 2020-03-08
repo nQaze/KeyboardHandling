@@ -17,7 +17,7 @@ class KeyboardHandlingBaseVC: UIViewController {
         
         subscribeToNotification(UIResponder.keyboardWillShowNotification, selector: #selector(keyboardWillShowOrHide))
         subscribeToNotification(UIResponder.keyboardWillHideNotification, selector: #selector(keyboardWillShowOrHide))
-        
+
         initializeHideKeyboard()
         
     }

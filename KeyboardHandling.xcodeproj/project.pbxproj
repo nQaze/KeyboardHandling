@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD8EAA9624155703008964D4 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8EAA9524155703008964D4 /* ChatVC.swift */; };
 		BDAC404923EEE9EE00EE8399 /* Solution2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC404823EEE9EE00EE8399 /* Solution2VC.swift */; };
 		BDB9940E23EEEFB9001040E9 /* Solution4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB9940D23EEEFB9001040E9 /* Solution4VC.swift */; };
 		BDB9941023EEF4C8001040E9 /* Solution5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB9940F23EEF4C8001040E9 /* Solution5VC.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD8EAA9524155703008964D4 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		BDAC404823EEE9EE00EE8399 /* Solution2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution2VC.swift; sourceTree = "<group>"; };
 		BDB9940D23EEEFB9001040E9 /* Solution4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution4VC.swift; sourceTree = "<group>"; };
 		BDB9940F23EEF4C8001040E9 /* Solution5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution5VC.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				BDD585B323DFCC3000FDF53B /* TextFieldUtilities.swift */,
 				BDD585B123DFCC0000FDF53B /* Constants.swift */,
 				BDD5859F23DFC6AA00FDF53B /* Solution1VC.swift */,
+				BD8EAA9524155703008964D4 /* ChatVC.swift */,
 				BDAC404823EEE9EE00EE8399 /* Solution2VC.swift */,
 				BDD585B723DFCF0E00FDF53B /* Solution3VC.swift */,
 				BDB9940D23EEEFB9001040E9 /* Solution4VC.swift */,
@@ -165,6 +168,7 @@
 				BDD585A023DFC6AA00FDF53B /* Solution1VC.swift in Sources */,
 				BDD5859C23DFC6AA00FDF53B /* AppDelegate.swift in Sources */,
 				BDD585B823DFCF0E00FDF53B /* Solution3VC.swift in Sources */,
+				BD8EAA9624155703008964D4 /* ChatVC.swift in Sources */,
 				BDD585B423DFCC3000FDF53B /* TextFieldUtilities.swift in Sources */,
 				BDD5859E23DFC6AA00FDF53B /* SceneDelegate.swift in Sources */,
 				BDAC404923EEE9EE00EE8399 /* Solution2VC.swift in Sources */,

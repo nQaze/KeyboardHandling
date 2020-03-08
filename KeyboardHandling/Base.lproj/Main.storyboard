@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OC7-hH-bR0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="idI-rO-uuI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -660,6 +660,107 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5NM-Av-SDZ" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2645" y="112"/>
+        </scene>
+        <!--My Chat-->
+        <scene sceneID="moy-Je-X06">
+            <objects>
+                <viewController storyboardIdentifier="ChatVC" title="My Chat" id="G7W-sb-nNJ" customClass="ChatVC" customModule="KeyboardHandling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vzE-Fy-95Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0T5-V5-xO4">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7h-TU-rSh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCX-3b-TtE">
+                                                <rect key="frame" x="0.0" y="668" width="414" height="54"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vji-q6-pjE">
+                                                        <rect key="frame" x="8" y="9" width="324" height="34"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTz-dF-HZe">
+                                                        <rect key="frame" x="348" y="11" width="58" height="30"/>
+                                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.2156862745" green="0.23137254900000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <inset key="contentEdgeInsets" minX="8" minY="4" maxX="8" maxY="4"/>
+                                                        <state key="normal" title="Send">
+                                                            <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ZTz-dF-HZe" secondAttribute="trailing" constant="8" id="4Xc-ed-ic4"/>
+                                                    <constraint firstItem="vji-q6-pjE" firstAttribute="leading" secondItem="oCX-3b-TtE" secondAttribute="leading" constant="8" id="5cQ-6A-Vr1"/>
+                                                    <constraint firstAttribute="height" constant="54" id="8i4-Oo-lBN"/>
+                                                    <constraint firstItem="ZTz-dF-HZe" firstAttribute="centerY" secondItem="vji-q6-pjE" secondAttribute="centerY" id="O5K-6y-Q8H"/>
+                                                    <constraint firstAttribute="centerY" secondItem="vji-q6-pjE" secondAttribute="centerY" constant="1" id="Qhl-7V-Zip"/>
+                                                    <constraint firstItem="ZTz-dF-HZe" firstAttribute="leading" secondItem="vji-q6-pjE" secondAttribute="trailing" constant="16" id="edW-am-87l"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="oCX-3b-TtE" secondAttribute="bottom" id="Lw7-4e-VWG"/>
+                                            <constraint firstItem="oCX-3b-TtE" firstAttribute="leading" secondItem="x7h-TU-rSh" secondAttribute="leading" id="f2h-I7-Voh"/>
+                                            <constraint firstAttribute="trailing" secondItem="oCX-3b-TtE" secondAttribute="trailing" id="jiN-Tp-gaS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="x7h-TU-rSh" firstAttribute="leading" secondItem="0T5-V5-xO4" secondAttribute="leading" id="98U-Ef-GaK"/>
+                                    <constraint firstItem="x7h-TU-rSh" firstAttribute="top" secondItem="0T5-V5-xO4" secondAttribute="top" id="9jL-jE-5Il"/>
+                                    <constraint firstAttribute="bottom" secondItem="x7h-TU-rSh" secondAttribute="bottom" id="Jkk-Zy-Eur"/>
+                                    <constraint firstAttribute="trailing" secondItem="x7h-TU-rSh" secondAttribute="trailing" id="UMP-ZC-27A"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="2ci-mG-Inh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="nDz-xj-vD6"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x7h-TU-rSh" firstAttribute="height" secondItem="0T5-V5-xO4" secondAttribute="height" id="3jm-lX-A7n"/>
+                            <constraint firstItem="3zf-c6-OQa" firstAttribute="leading" secondItem="0T5-V5-xO4" secondAttribute="leading" id="R9p-I0-o3d"/>
+                            <constraint firstItem="0T5-V5-xO4" firstAttribute="bottom" secondItem="3zf-c6-OQa" secondAttribute="bottom" id="lfM-ST-Ovc"/>
+                            <constraint firstItem="0T5-V5-xO4" firstAttribute="trailing" secondItem="3zf-c6-OQa" secondAttribute="trailing" id="qwU-8Z-VR6"/>
+                            <constraint firstItem="x7h-TU-rSh" firstAttribute="width" secondItem="0T5-V5-xO4" secondAttribute="width" id="rKo-UQ-tZi"/>
+                            <constraint firstItem="3zf-c6-OQa" firstAttribute="top" secondItem="0T5-V5-xO4" secondAttribute="top" id="zzN-ZM-chE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3zf-c6-OQa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Chat" id="zCN-wZ-X6I"/>
+                    <connections>
+                        <outlet property="backgroundSV" destination="0T5-V5-xO4" id="FaT-VQ-hgS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wC8-mg-MaR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4380" y="112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h0d-7A-ssD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="idI-rO-uuI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SI0-9j-5zS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="G7W-sb-nNJ" kind="relationship" relationship="rootViewController" id="HFY-hV-NsS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lT3-Qo-VBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3544.9275362318845" y="111.83035714285714"/>
         </scene>
     </scenes>
     <resources>
