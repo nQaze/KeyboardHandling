@@ -23,11 +23,20 @@ class Solution4VC: UIViewController {
     }
     
     func setupToolbar(){
+        //Create a toolbar
         let bar = UIToolbar()
+        
+        //Create a done button with an action to trigger our function to dismiss the keyboard
         let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissMyKeyboard))
+        
+        //Create a felxible space item so that we can add it around in toolbar to position our done button
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        //Add the created button items in the toobar
         bar.items = [flexSpace, flexSpace, doneBtn]
         bar.sizeToFit()
+        
+        //Add the toolbar to our textfield
         pinTF.inputAccessoryView = bar
     }
     

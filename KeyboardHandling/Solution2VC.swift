@@ -32,6 +32,7 @@ class Solution2VC: UIViewController {
 extension Solution2VC: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Check if there is any other text-field in the view whose tag is +1 greater than the current text-field on which the return key was pressed. If yes → then move the cursor to that next text-field. If No → Dismiss the keyboard
         if let nextField = self.view.viewWithTag(textField.tag + 1) as? UITextField {
             nextField.becomeFirstResponder()
         } else {
